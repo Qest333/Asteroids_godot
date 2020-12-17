@@ -22,7 +22,6 @@ func _ready():
 				get_child(get_child_count()-1).position.x = rng.randi_range(-100, screen_size.x+100)
 				get_child(get_child_count()-1).position.y = -100
 				rng.randomize()
-				print(rng.randi_range(-1000, 1000))
 				get_child(get_child_count()-1).apply_central_impulse(Vector2(rng.randi_range(-150, 150), rng.randi_range(-150, 150)))
 				rng.randomize()
 				get_child(get_child_count()-1).angular_velocity = rng.randi_range(-5, 5)
@@ -31,7 +30,6 @@ func _ready():
 				get_child(get_child_count()-1).position.x = screen_size.x+100
 				get_child(get_child_count()-1).position.y = rng.randi_range(-100, screen_size.y+100)
 				rng.randomize()
-				print(rng.randi_range(-1000, 1000))
 				get_child(get_child_count()-1).apply_central_impulse(Vector2(rng.randi_range(-150, 150), rng.randi_range(-150, 150)))
 				rng.randomize()
 				get_child(get_child_count()-1).angular_velocity = rng.randi_range(-5, 5)
@@ -40,7 +38,6 @@ func _ready():
 				get_child(get_child_count()-1).position.x = rng.randi_range(-100, screen_size.x+100)
 				get_child(get_child_count()-1).position.y = screen_size.y+100
 				rng.randomize()
-				print(rng.randi_range(-1000, 1000))
 				get_child(get_child_count()-1).apply_central_impulse(Vector2(rng.randi_range(-150, 150), rng.randi_range(-150, 150)))
 				rng.randomize()
 				get_child(get_child_count()-1).angular_velocity = rng.randi_range(-5, 5)
@@ -49,7 +46,6 @@ func _ready():
 				get_child(get_child_count()-1).position.x = -100
 				get_child(get_child_count()-1).position.y = rng.randi_range(-100, screen_size.y+100)
 				rng.randomize()
-				print(rng.randi_range(-1000, 1000))
 				get_child(get_child_count()-1).apply_central_impulse(Vector2(rng.randi_range(-150, 150), rng.randi_range(-150, 150)))
 				rng.randomize()
 				get_child(get_child_count()-1).angular_velocity = rng.randi_range(-5, 5)

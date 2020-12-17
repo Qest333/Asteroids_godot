@@ -14,7 +14,6 @@ func start(pos):
 	apply_central_impulse(Vector2(rng.randi_range(-150, 150), rng.randi_range(-150, 150)))
 	rng.randomize()
 	angular_velocity = rng.randi_range(-5, 5)
-	print("done")
 	pass # Replace with function body.
 
 
