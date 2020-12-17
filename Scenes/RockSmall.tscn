@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Rock.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/RockPositionWraper.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/RockSmall.gd" type="Script" id=3]
+
+[node name="RockSmall" type="RigidBody2D"]
+collision_layer = 2147483648
+gravity_scale = 0.0
+custom_integrator = true
+contacts_reported = 2
+contact_monitor = true
+can_sleep = false
+linear_damp = 0.0
+angular_damp = 0.0
+script = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2( 0.15, 0.15 )
+polygon = PoolVector2Array( -10.3454, -186.624, 149.224, -131.936, 184.435, 8.15556, 112.516, 148.996, 2.39017, 88.315, -147.441, 95.0574, -174.41, -9.07497, -67.2811, -68.2581, -53.0472, -164.15 )
+
+[node name="Sprite" type="Sprite" parent="CollisionPolygon2D"]
+texture = ExtResource( 1 )
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource( 2 )
+[connection signal="body_entered" from="." to="." method="_on_RigidBody2D_body_entered"]
